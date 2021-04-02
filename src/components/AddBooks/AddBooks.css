@@ -1,0 +1,7 @@
+.addBook{
+    width: 400px;
+    margin-left: 10%;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow:1px 1px 10px gray;
+}

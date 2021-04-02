@@ -1,0 +1,12 @@
+.table{
+    padding: 5px;
+    box-shadow:1px 1px 10px gray;
+    width: 500px;
+    
+}
+.checkout {
+    margin-top: 30px;
+    margin-left: 30%;
+    text-align: center;
+    
+}
