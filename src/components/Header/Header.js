@@ -6,6 +6,7 @@ const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(userContext);
   return (
     <div className="header" style={{color:'white'}}>
+      <h1 style={{color:"black"}}>Books Store</h1>
       <nav>
       <Link to="/">Home</Link>
       <Link to="/order">Orders</Link>
