@@ -11,7 +11,7 @@ const Checkout = () => {
     const [book, setBook] = useState({});
     const [order, setOrder] = useState({});
     useEffect(()=>{
-        fetch(`http://localhost:5000/book/${bookId}`)
+        fetch(`https://glacial-hamlet-84309.herokuapp.com/book/${bookId}`)
         .then(res => res.json())
         .then(data => setBook(data))
     }, [])
@@ -20,7 +20,7 @@ const Checkout = () => {
     const OrderCheckout = ()=>{
         
         const orderDetails = {...loggedInUser, ...book, orderTime: new Date()}
-        fetch('http://localhost:5000/addOrder',{
+        fetch('https://glacial-hamlet-84309.herokuapp.com/addOrder',{
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'

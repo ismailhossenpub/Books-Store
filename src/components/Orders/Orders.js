@@ -7,7 +7,7 @@ const Orders = () => {
   console.log(order);
   const [loggedInUser, setLoggedInUser] = useContext(userContext);
   useEffect(() => {
-    fetch("http://localhost:5000/getOrder?email=" + loggedInUser.email)
+    fetch("https://glacial-hamlet-84309.herokuapp.com/getOrder?email=" + loggedInUser.email)
       .then((res) => res.json())
       .then((data) => setOrder(data));
   }, []);

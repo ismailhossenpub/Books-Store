@@ -18,7 +18,7 @@ const AddBooks = () => {
       image: imageURL,
       price:data.price
     }
-    const url = `http://localhost:5000/addBook`;
+    const url = `https://glacial-hamlet-84309.herokuapp.com/addBook`;
 
     
     
